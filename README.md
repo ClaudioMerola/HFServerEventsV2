@@ -34,7 +34,7 @@ Even that WinLogBeat comes with default Dashboards in Kibana (and are enough to 
 
 <br/>
 
-The script expects the installation files from ElasticSearch, Kibana and WinLogBeats are present on the C: drive in the server:
+The script expects the installation files from ElasticSearch, Kibana and WinLogBeats are present on the C: drive (any folder) in the server:
 
 <br/>
 - Windows Server
