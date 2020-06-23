@@ -39,11 +39,11 @@ The script expects the installation files from ElasticSearch, Kibana and WinLogB
 <br/>
 - Windows Server
 
-- ElasticSearch (MSI Installer) can be downloaded from: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.0.msi 
+- ElasticSearch. (MSI Installer) can be downloaded from: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.0.msi 
 
--	Kibana (There is no MSI installer) download the ZIP file from: https://artifacts.elastic.co/downloads/kibana/kibana-7.8.0-windows-x86_64.zip 
+-	Kibana. Download the ZIP file from: https://artifacts.elastic.co/downloads/kibana/kibana-7.8.0-windows-x86_64.zip 
 
--	WinLogBeat (MSI Installer) can be downloaded from: https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.8.0-windows-x86_64.msi 
+-	WinLogBeat. (MSI Installer) can be downloaded from: https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.8.0-windows-x86_64.msi 
 
 <br/><br/>
 
@@ -51,6 +51,9 @@ The script expects the installation files from ElasticSearch, Kibana and WinLogB
 
 <br/>
 
-- Just put everything together and run the script :)
+1) Just put everything together and run the script :)
+2) browse to http://servername:5601 and go to WinLogBeat Dashboards 
+
+
 
 <br/>
