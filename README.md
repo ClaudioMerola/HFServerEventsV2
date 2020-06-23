@@ -1,7 +1,5 @@
 # HFServerEventsV2
 
-<br/><br/>
-
 This is the new version of the HF Server Events (that was based on SQL Server). 
 
 <br/>
@@ -39,6 +37,7 @@ Even that WinLogBeat comes with default Dashboards in Kibana (and are enough to 
 The script expects the installation files from ElasticSearch, Kibana and WinLogBeats are present on the C: drive in the server:
 
 <br/>
+- Windows Server (tested on Windows Server 2019 only)
 
 - ElasticSearch (MSI Installer) can be downloaded from: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.0.msi 
 
