@@ -1,5 +1,9 @@
 # HFServerEventsV2
 
+This is the new version of the HF Server Events (that was based on SQL Server). 
+
+This version is powered by (the opensource and free) ElasticSearch, Kibana and WinLogBeat.
+
 Indeed the script basically install those solutions and configures them accordingly.
 
 The script will:
