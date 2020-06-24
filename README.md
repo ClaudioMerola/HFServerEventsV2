@@ -33,7 +33,7 @@ The script will:
 
 <br/>
 
-** *Even the script will try to configure the Event Forward Subscription on each Domain Controller. I advise to configure a GPO to set the Event Forward (a template GPO is available in the GPO folder is this repository)
+** *Even the script will try to configure the Event Forward Subscription on each Domain Controller. I advise to configure a GPO to set the Event Forward (a template GPO is available in the GPO folder is this repository) - https://github.com/ClaudioMerola/HFServerEventsV2/blob/master/Docs/GroupPolicy.md
 
 <br/><br/>
 
