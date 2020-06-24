@@ -4,7 +4,7 @@
 
 <br/>
 
-This version is still in development and is powered by (the opensource and free) ElasticSearch, Kibana and WinLogBeat.
+This version is powered by (the opensource and free) ElasticSearch, Kibana and WinLogBeat.
 
 Indeed the script basically install those solutions and configures them accordingly.
 
@@ -19,14 +19,14 @@ The script will:
 -	Install ElasticSearch
 -	Install Kibana*
 -	Install WinLogBeat
--	Configure the Domain Controller to Forward Events
+-	Configure the Domain Controller to Forward Events**
 
 
 * *Kibana does not create the Windows Service by default. The script does that and sets the service as depended of ElasticSearch
 
 <br/>
 
-Even that WinLogBeat comes with default Dashboards in Kibana (and are enough to consult and beautifully manage the events). I’m creating new custom Dashboard to complement the solution as a whole.
+** *Even the script will try to configure the Event Forward Subscription on each Domain Controller. I advise to configure a GPO to set the Event Forward (a template GPO is available in the GPO folder is this repository)
 
 <br/><br/>
 
@@ -35,6 +35,8 @@ Even that WinLogBeat comes with default Dashboards in Kibana (and are enough to 
 <br/>
 
 The script expects the installation files from ElasticSearch, Kibana and WinLogBeats are present on the C: drive (any folder) in the server:
+
+
 
 <br/>
 - Windows Server
