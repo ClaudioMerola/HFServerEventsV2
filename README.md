@@ -80,9 +80,15 @@ After the script finishes. If everything ran smoothly you should see events star
 
 The next thing you should do is to open Internet Explorer on the server and browse to: http://localhost:5601. This will open Kibana Portal.
 
+You should be presented with the Kibana home. At the home there are 3 main areas you will use:
 
+- Dashboards (for overall view and consolidated status of Collector Server) 
+- Visualize (for custom reports and graphics of specific status) 
+- Discover (for details and event searches)
 
 <br/>
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Home.png)
 
 <br/>
 
