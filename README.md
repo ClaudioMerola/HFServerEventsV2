@@ -4,7 +4,12 @@
 
 <br/>
 
-This version is powered by (the opensource and free) ElasticSearch, Kibana and WinLogBeat.
+This version is powered by (the opensource and free) ElasticSearch, Kibana and WinLogBeat:
+<br/>
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Dashboard.png)
+
+<br/>
 
 Indeed the script basically install those solutions and configures them accordingly.
 
@@ -34,12 +39,13 @@ The script will:
 
 <br/>
 
-The script expects the installation files from ElasticSearch, Kibana and WinLogBeats are present on the C: drive (any folder) in the server:
+The script expects the installation files from ElasticSearch, Kibana and WinLogBeats are present on the C: drive (at any folder) in the server:
 
 ![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Install.png)
 
 <br/>
-- Windows Server
+
+- Windows Server (I used Windows Server 2019 on the testing phase. But it should work on at least Windows Server 2012 R2)
 
 - ElasticSearch. (MSI Installer) can be downloaded from: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.0.msi 
 
