@@ -36,7 +36,7 @@ The script will:
 
 The script expects the installation files from ElasticSearch, Kibana and WinLogBeats are present on the C: drive (any folder) in the server:
 
-
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Install.png)
 
 <br/>
 - Windows Server
