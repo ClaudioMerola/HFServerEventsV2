@@ -1,4 +1,4 @@
-# HFServerEventsV2
+# HF Server Events (V2)
 
 #### This is the new version of the HF Server Events. 
 
