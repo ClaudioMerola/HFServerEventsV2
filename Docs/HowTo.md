@@ -28,12 +28,28 @@ For that, in the search bar you should select the source of the data, in this ca
 
 The matching logged events are presented down below, and you can expand them to see the details of every reported event:
 
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/SearchEventID2.png)
 
+<br/>
+
+The field “Message” contains the details of the event.
 
 <br/>
+
+Is also possible to search for a specific word in the message of the event:
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Search1.png)
+
 <br/>
+
+In this case I was using the Event Message as source ("winlog.event_data.Detail"), since I didn't want an exact match I used “Like” as the filtering criteria, and “NewUser4” (an user account I had created a few minutes earlier).
+
 <br/>
-<br/>
+
+Once again, the details of the event were present correctly in the “Message” field.
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Search2.png)
+
 <br/>
 <br/>
 <br/>
