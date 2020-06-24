@@ -21,8 +21,6 @@ $DCs = $Forest.domains | ForEach-Object {$_.DomainControllers}
 
 function Collector {
 
-try{
-
 if ((Test-Path -Path C:\EvtHFv2\Collector -PathType Container) -eq $false) {New-Item -Type Directory -Force -Path C:\EvtHFv2\Collector}
 
 $DCSec = ("C:\EvtHFv2\Collector\EvtHF_DC_Sec.xml") 
@@ -165,16 +163,15 @@ Invoke-Command -ScriptBlock {net start wecsvc}
 Invoke-Command -ScriptBlock {wecutil qc /quiet}
 Invoke-Command -ScriptBlock {wecutil cs $DCSec}
 Invoke-Command -ScriptBlock {wecutil cs $DCSys}
-Invoke-Command -ScriptBlock {New-NetFirewallRule -DisplayName 'HF Server Events' -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow}
-
+#Invoke-Command -ScriptBlock {New-NetFirewallRule -DisplayName 'Kibana Portal' -Direction Inbound -LocalPort 5601 -Protocol TCP -Action Allow}
+Invoke-Command -ScriptBlock {netsh http delete urlacl url=http://+:5985/wsman/}
+Invoke-Command -ScriptBlock {netsh http add urlacl url=http://+:5985/wsman/ sddl="D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970)(A;;GX;;;S-1-5-80-4059739203-877974739-1245631912-527174227-2996563517)"}
+Invoke-Command -ScriptBlock {net stop WinRM}
+Invoke-Command -ScriptBlock {net start WinRM}
+Invoke-Command -ScriptBlock {net stop wecsvc}
+Invoke-Command -ScriptBlock {net start wecsvc}
 Set-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\ForwardedEvents' -Name 'MaxSize' -value '1055129600'
 
-}
-catch
-{
-throw $Error
-exit
-}
 
 }
 
@@ -354,6 +351,23 @@ New-Service -Name 'HFKibana' -DisplayName 'Elastic Kibana' -Description 'This Se
 
 Invoke-Command -ScriptBlock {sc.exe config HFKibana start=delayed-auto }
 
+$Kibanafile = @"
+server.port: 5601
+
+server.host: "0.0.0.0"
+
+server.name: "HF Event Server"
+
+elasticsearch.hosts: ["http://localhost:9200"]
+"@
+
+$Kibanayml = ('C:\EvtHFv2\Kibana\'+(Get-ChildItem -Path 'C:\EvtHFv2\Kibana' -Name '*kibana.yml' -Recurse))
+
+$Kibanafile | Out-File $Kibanayml -Encoding utf8 
+
+
+Start-Service -Name 'HFKibana'
+
 }
 
 
@@ -404,13 +418,19 @@ setup.ilm.overwrite: true
 
 $Winlogbeatfile |  Out-File C:\EvtHFv2\Winlogbeat\winlogbeat.yml
 
-$winbeatexe = ('"'+('C:\Program Files\'+(Get-ChildItem -Path 'C:\Program Files\' -Name '*winlogbeat.exe' -Recurse))+'"')
+$winbeatbat = ('C:\Program Files\'+(Get-ChildItem -Path 'C:\Program Files\' -Name '*winlogbeat.exe' -Recurse))
+
+if (!(Get-Service -Name *winlogbeat*)) {wait 10}
 
 if ((Get-Service -Name *winlogbeat*).Status -eq 'Running') {Stop-Service -Name *winlogbeat*}
 
 Copy-Item -Path C:\EvtHFv2\Winlogbeat\winlogbeat.yml -Destination C:\ProgramData\Elastic\Beats\winlogbeat\winlogbeat.yml -Force
 
-Invoke-Command -ScriptBlock {$winbeatexe+" setup -c C:\ProgramData\Elastic\Beats\winlogbeat\winlogbeat.yml"}
+$exec = ($winbeatbat+' setup -c C:\ProgramData\Elastic\Beats\winlogbeat\winlogbeat.yml')
+
+$argo = (' setup -c C:\ProgramData\Elastic\Beats\winlogbeat\winlogbeat.yml')
+
+Start-Process $winbeatbat -ArgumentList $argo -wait -NoNewWindow -PassThru
 
 if ((Get-Service -Name *winlogbeat*).Status -ne 'Running') {Start-Service -Name *winlogbeat*}
 
