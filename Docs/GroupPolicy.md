@@ -26,6 +26,11 @@ https://github.com/ClaudioMerola/HFServerEventsV2/blob/master/GPO/HFEventServer.
 After you have downloaded the templates and have copied the extracted files to a Domain Controller. Do the following:
 
 <br/>
+
+Create a new GPO:
+
+
+
 <br/>
 <br/>
 <br/>
