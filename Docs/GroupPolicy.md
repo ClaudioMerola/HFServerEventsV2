@@ -13,3 +13,29 @@ There are many guides on the internet on how to configure the Event Forward trou
 There is also a template I have created with the Auditing settings you should set in your environment. If you are already using the Microsoft Security Compliance Baseline Toolkit (https://www.microsoft.com/en-us/download/confirmation.aspx?id=55319) you don’t need to use this template since all those auditing is already present in the Microsoft’s baseline.
 
 <br/>
+
+If you want to use the templates I created, you can download them here: 
+https://github.com/ClaudioMerola/HFServerEventsV2/blob/master/GPO/HFEventServer.zip 
+
+<br/>
+
+## Applying the templates
+
+<br/>
+
+After you have downloaded the templates and have copied the extracted files to a Domain Controller. Do the following:
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
