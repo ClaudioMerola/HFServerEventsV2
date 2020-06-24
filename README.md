@@ -13,7 +13,7 @@ This version is powered by (the opensource and free) ElasticSearch, Kibana and W
 
 Indeed the script basically install those solutions and configures them accordingly.
 
-<br/><br/>
+<br/>
 
 The script will:
 
