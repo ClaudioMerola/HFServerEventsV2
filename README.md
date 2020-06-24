@@ -100,7 +100,7 @@ If you are not presented with the Kibana home, or are presented with a screen as
 
 <br/>
 
-![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Script4.png)
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/script4.png)
 
 <br/>
 
