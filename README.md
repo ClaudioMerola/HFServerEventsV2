@@ -92,7 +92,7 @@ You should be presented with the Kibana home. At the home there are 3 main areas
 
 <br/>
 
-Details on how to use the “Discover” sections are present in the HOW TO SEARCH IN KIBANA document
+Details on how to use the “Discover” sections are present in the (https://github.com/ClaudioMerola/HFServerEventsV2/blob/master/Docs/HowTo.md) document
 
 <br/>
 
