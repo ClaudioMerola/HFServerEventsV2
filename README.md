@@ -11,7 +11,9 @@ This version is powered by (the opensource and free) ElasticSearch, Kibana and W
 
 <br/>
 
-Indeed the script basically install those solutions and configures them accordingly.
+Indeed the script basically install those solutions and configures them accordingly. 
+
+First of all. Nothing of that would be possible without Elastic Stack solutions and Jean-François Larvoire’s script on how to create a Windows Service using powershell  
 
 <br/>
 
@@ -62,6 +64,8 @@ The script expects the installation files from ElasticSearch, Kibana and WinLogB
 1) Just put everything together and run the script :)
 2) browse to http://servername:5601 and go to WinLogBeat Dashboards 
 
+<br/><br/>
 
+## Post Install:
 
 <br/>
