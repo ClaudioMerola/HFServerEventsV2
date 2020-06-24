@@ -69,3 +69,22 @@ The script expects the installation files from ElasticSearch, Kibana and WinLogB
 ## Post Install:
 
 <br/>
+
+After the script finishes. If everything ran smoothly you should see events start to appear in the Forwarded Events in the Server
+
+<br/>
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/ForwardedEvents.png)
+
+<br/>
+
+The next thing you should do is to open Internet Explorer on the server and browse to: http://localhost:5601. This will open Kibana Portal.
+
+
+
+<br/>
+
+<br/>
+
+<br/>
+
