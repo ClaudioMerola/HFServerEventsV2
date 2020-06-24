@@ -62,7 +62,7 @@ The script expects the installation files from ElasticSearch, Kibana and WinLogB
 <br/>
 
 1) Just put everything together and run the script :)
-2) browse to http://servername:5601 and go to WinLogBeat Dashboards 
+2) browse to http://servername:5601 and enjoy the WinLogBeat Dashboards 
 
 <br/><br/>
 
