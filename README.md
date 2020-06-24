@@ -92,5 +92,23 @@ You should be presented with the Kibana home. At the home there are 3 main areas
 
 <br/>
 
+Details on how to use the “Discover” sections are present in the HOW TO SEARCH IN KIBANA document
+
+<br/>
+
+If you are not presented with the Kibana home, or are presented with a screen asking to configure the index pattern. Re-run the script’s phase that configures the WinLogBeat:
+
+<br/>
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Script4.png)
+
+<br/>
+
+In the back level this will run the WinLogBeat “Setup” parameter. That will create the Index Patterns, dashboards and etc. in Kibana
+
+<br/>
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/winlogbeatkibana.png)
+
 <br/>
 
