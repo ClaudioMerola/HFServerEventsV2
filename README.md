@@ -92,11 +92,11 @@ You should be presented with the Kibana home. At the home there are 3 main areas
 
 <br/>
 
-Details on how to use the “Discover” sections are present in the (https://github.com/ClaudioMerola/HFServerEventsV2/blob/master/Docs/HowTo.md) document
+Details on how to use the “Discover” section are present in the (https://github.com/ClaudioMerola/HFServerEventsV2/blob/master/Docs/HowTo.md) document
 
 <br/>
 
-If you are not presented with the Kibana home, or are presented with a screen asking to configure the index pattern. Re-run the script’s phase that configures the WinLogBeat:
+In case you open the portal and is not presented with the Kibana home, or are presented with a screen asking to configure the index pattern. Re-run the script’s phase that configures the WinLogBeat:
 
 <br/>
 
