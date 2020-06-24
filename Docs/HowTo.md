@@ -51,5 +51,25 @@ Once again, the details of the event were present correctly in the “Message”
 ![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/Search2.png)
 
 <br/>
+
+Is even possible to combine searches into a unique query to be even more specific in the search:
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/SearchEventIDAND.png)
+
 <br/>
+
+Only 16 record were found.
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/SearchEventIDANDResult.png)
+
+<br/>
+
+One last thing. Don’t forget to set the time filtering correctly.
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/SearchDate.png)
+
+<br/>
+
+Is possible to configure the specific date or even time range inside the search bar if you need.
+
 <br/>
