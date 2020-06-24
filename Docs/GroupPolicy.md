@@ -27,20 +27,32 @@ After you have downloaded the templates and have copied the extracted files to a
 
 <br/>
 
-Create a new GPO:
+1) Create a new GPO:
 
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/GPO1.png)
 
+<br/>
+
+2) Now you have an empty GPO, right click and select "Import Settings":
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/GPO2.png)
 
 <br/>
+
+3) Browse to the folder containing the extracted Templates and select the "HF Event Server - Forwarder":
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/GPO3.png)
+
 <br/>
+
+4) Now you need to edit this GPO and configure your server's name:
+
+![alt text](https://github.com/ClaudioMerola/HFServerEventsV2/raw/master/Docs/img/GPO4.png)
+
 <br/>
+
+Now repeat the steps 1, 2 and 3 only for the template "HF Event Server - Domain Controllers" (this template only contains the auditing settings and nothing extra has to be done)
+
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+Just apply both GPOs in the Domain Controllers containner.
