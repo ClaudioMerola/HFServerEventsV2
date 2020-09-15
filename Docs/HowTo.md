@@ -1,4 +1,4 @@
-# How to Do stuff in Kibana
+# How to use Kibana to search and view Events
 
 <br/>
 
